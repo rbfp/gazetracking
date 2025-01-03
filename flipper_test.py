@@ -9,12 +9,13 @@
 ##3
 #NEC A: 0x17 C: 0x07
 #ir tx NEC 0x17 0x07
+
 import serial
 import time
 
 SERIAL_PORT = '/dev/cu.usbmodemflip_Ouyidot1'  # Replace with your serial port
 BAUD_RATE = 115200
-COMMAND = "ir tx NEC 0x17 0x44"
+COMMAND = "ir tx NEC 0x17 0x07\r"
 
 try:
     with serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=1) as flipper:
