@@ -45,4 +45,3 @@ while True:
 # Release resources
 webcam.release()
 cv2.destroyAllWindows()
-
