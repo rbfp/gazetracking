@@ -3,7 +3,7 @@ import cv2
 
 # Initialize GazeTracking
 gaze = GazeTracking()
-webcam = cv2.VideoCapture(0)
+webcam = cv2.VideoCapture(1)
 
 if not webcam.isOpened():
     print("Error: Unable to access the camera.")
